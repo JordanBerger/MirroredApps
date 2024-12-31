@@ -38,7 +38,7 @@ export function SkillsShowcase() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: index * 0.1, type: "spring" }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, transition: { delay: 0 } }}
             className={`bg-gradient-to-br ${skill.color} rounded-lg p-4 text-center shadow-lg cursor-pointer`}
           >
             <span className="font-semibold text-gray-900">{skill.name}</span>

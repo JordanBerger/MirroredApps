@@ -24,7 +24,7 @@ export function Hero() {
         transition={{ delay: 0.4, type: "spring" }}
         className="text-2xl"
       >
-        Software Engineer
+        Software Engineering
       </motion.p>
       {/* <motion.div
         initial={{ y: 20, opacity: 0 }}
