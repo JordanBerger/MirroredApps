@@ -16,7 +16,7 @@ export function Hero() {
         transition={{ delay: 0.2, type: "spring" }}
         className="text-6xl font-bold pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-pink-500 to-violet-600"
       >
-        Jordan Berger
+        Mirrored Apps
       </motion.h1>
       <motion.p
         initial={{ y: 20 }}
