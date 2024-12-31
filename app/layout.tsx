@@ -1,12 +1,12 @@
-import type { Metadata } from "next"
+import './globals.css'
 import { Inter } from 'next/font/google'
-import "./globals.css"
+import { ThemeProvider } from '@/components/theme-provider'
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: "Web Developer Portfolio",
-  description: "A vibrant showcase of my web development skills",
+export const metadata = {
+  title: 'Your Name - Software Engineer',
+  description: 'Portfolio of a software engineer focused on web applications',
 }
 
 export default function RootLayout({
@@ -15,11 +15,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-gray-900 text-gray-100`}>
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   )

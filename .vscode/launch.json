@@ -12,6 +12,7 @@
                 "dev"
             ],
             "runtimeExecutable": "npm",
+            "console": "integratedTerminal",
             "skipFiles": [
                 "<node_internals>/**"
             ],
