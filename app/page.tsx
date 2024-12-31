@@ -1,8 +1,6 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { SkillsShowcase } from "@/components/skills-showcase";
-import { ProjectsGrid } from "@/components/projects-grid";
-import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
@@ -10,8 +8,8 @@ export default function Home() {
       <Header />
       <Hero />
       <SkillsShowcase />
-      <ProjectsGrid />
-      <Contact />
+      {/* <ProjectsGrid /> */}
+      {/* <Contact /> */}
     </main>
   );
 }

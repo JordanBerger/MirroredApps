@@ -14,7 +14,7 @@ export function Hero() {
         initial={{ y: 20 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.2, type: "spring" }}
-        className="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-pink-500 to-violet-600"
+        className="text-6xl font-bold pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-pink-500 to-violet-600"
       >
         Jordan Berger
       </motion.h1>
@@ -26,7 +26,7 @@ export function Hero() {
       >
         Software Engineer
       </motion.p>
-      <motion.div
+      {/* <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.6, type: "spring" }}
@@ -38,7 +38,7 @@ export function Hero() {
         >
           Get in Touch
         </a>
-      </motion.div>
+      </motion.div> */}
     </motion.section>
   );
 }

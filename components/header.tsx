@@ -1,12 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MoonIcon, SunIcon } from "lucide-react";
+import { MenuIcon, MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { useState } from "react";
+
+const sections = ["Skills" /* "Projects", "Contact" */];
 
 export function Header() {
   const { theme, setTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <motion.header
@@ -17,15 +21,29 @@ export function Header() {
     >
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+        className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 cursor-pointer"
       >
         <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           Home
         </a>
       </motion.div>
       <nav>
-        <ul className="flex space-x-6">
-          {["Skills", "Projects", "Contact"].map((item) => (
+        <button
+          type="button"
+          aria-label="Toggle Menu"
+          className="sm:hidden flex items-center px-3 py-2 border rounded"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <MenuIcon />
+        </button>
+        <ul
+          className={`${
+            menuOpen
+              ? "block absolute bg-primary-foreground p-2 right-3 rounded"
+              : "hidden"
+          } sm:flex sm:space-x-6 space-y-2 sm:space-y-0`}
+        >
+          {sections.map((item) => (
             <motion.li key={item} whileHover={{ scale: 1.1 }}>
               <Link
                 href={`#${item.toLowerCase()}`}
