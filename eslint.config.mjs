@@ -18,6 +18,10 @@ const eslintConfig = [
   {
     rules: {
       "unicorn/prevent-abbreviations": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { varsIgnorePattern: "^_" },
+      ],
     },
   },
 ];

@@ -3,21 +3,16 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "JavaScript", color: "from-yellow-400 to-yellow-600" },
-  { name: "TypeScript", color: "from-blue-400 to-blue-600" },
-  { name: "React", color: "from-cyan-400 to-cyan-600" },
-  { name: "Next.js", color: "from-gray-400 to-gray-600" },
-  { name: "Node.js", color: "from-green-400 to-green-600" },
-  { name: "Express", color: "from-gray-400 to-gray-600" },
-  { name: "MongoDB", color: "from-green-500 to-green-700" },
-  { name: "PostgreSQL", color: "from-blue-500 to-blue-700" },
-  { name: "GraphQL", color: "from-pink-400 to-pink-600" },
-  { name: "REST APIs", color: "from-indigo-400 to-indigo-600" },
-  { name: "HTML5", color: "from-orange-400 to-orange-600" },
-  { name: "CSS3", color: "from-blue-400 to-blue-600" },
-  { name: "Tailwind CSS", color: "from-teal-400 to-teal-600" },
-  { name: "Git", color: "from-orange-600 to-orange-800" },
-  { name: "Docker", color: "from-blue-500 to-blue-700" },
+  { name: "JavaScript", color: "from-yellow-200 to-yellow-400" },
+  { name: "TypeScript", color: "from-blue-200 to-blue-400" },
+  { name: "React", color: "from-cyan-200 to-cyan-400" },
+  { name: "Next.js", color: "from-gray-200 to-gray-400" },
+  { name: "Node.js", color: "from-green-200 to-green-400" },
+  { name: "Express", color: "from-gray-200 to-gray-400" },
+  { name: "MongoDB", color: "from-green-300 to-green-500" },
+  { name: "PostgreSQL", color: "from-blue-300 to-blue-500" },
+  { name: "GraphQL", color: "from-pink-200 to-pink-400" },
+  { name: "Tailwind", color: "from-teal-200 to-teal-400" },
 ];
 
 export function SkillsShowcase() {
@@ -32,17 +27,17 @@ export function SkillsShowcase() {
         transition={{ duration: 0.5 }}
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
       >
-        {skills.map((skill, index) => (
-          <motion.div
+        {skills.map((skill) => (
+          <div
             key={skill.name}
-            initial={{ scale: 0 }}
+            /*  initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: index * 0.1, type: "spring" }}
-            whileHover={{ scale: 1.05, transition: { delay: 0 } }}
+            whileHover={{ scale: 1.05, transition: { delay: 0 } }} */
             className={`bg-gradient-to-br ${skill.color} rounded-lg p-4 text-center shadow-lg cursor-pointer`}
           >
             <span className="font-semibold text-gray-900">{skill.name}</span>
-          </motion.div>
+          </div>
         ))}
       </motion.div>
     </section>

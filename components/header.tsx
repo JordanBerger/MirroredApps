@@ -21,7 +21,7 @@ export function Header() {
     >
       <motion.div
         whileHover={{ scale: 1.1 }}
-        className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 cursor-pointer"
+        className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 cursor-pointer"
       >
         <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           Home
