@@ -12,7 +12,7 @@ export function Contact() {
       viewport={{ once: true }}
       className="py-20"
     >
-      <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+      <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-linear-to-r from-pink-500 to-violet-500">
         Get in Touch
       </h2>
       <form className="max-w-md mx-auto">
@@ -25,7 +25,7 @@ export function Contact() {
             type="text"
             id="name"
             name="name"
-            className="w-full px-4 py-3 bg-gray-800 rounded-lg  focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
+            className="w-full px-4 py-3 bg-gray-800 rounded-lg  focus:outline-hidden focus:ring-2 focus:ring-pink-500 transition-all duration-300"
             required
           />
         </div>
@@ -38,7 +38,7 @@ export function Contact() {
             type="email"
             id="email"
             name="email"
-            className="w-full px-4 py-3 bg-gray-800 rounded-lg  focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
+            className="w-full px-4 py-3 bg-gray-800 rounded-lg  focus:outline-hidden focus:ring-2 focus:ring-pink-500 transition-all duration-300"
             required
           />
         </div>
@@ -51,7 +51,7 @@ export function Contact() {
             id="message"
             name="message"
             rows={4}
-            className="w-full px-4 py-3 bg-gray-800 rounded-lg  focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all duration-300"
+            className="w-full px-4 py-3 bg-gray-800 rounded-lg  focus:outline-hidden focus:ring-2 focus:ring-pink-500 transition-all duration-300"
             required
           ></motion.textarea>
         </div>
@@ -59,7 +59,7 @@ export function Contact() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           type="submit"
-          className="w-full bg-gradient-to-r from-pink-500 to-violet-500  font-semibold px-6 py-3 rounded-full hover:from-pink-600 hover:to-violet-600 transition-all duration-300"
+          className="w-full bg-linear-to-r from-pink-500 to-violet-500  font-semibold px-6 py-3 rounded-full hover:from-pink-600 hover:to-violet-600 transition-all duration-300"
         >
           Send Message
         </motion.button>

@@ -18,7 +18,7 @@ const skills = [
 export function SkillsShowcase() {
   return (
     <section id="skills" className="py-20">
-      <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+      <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-linear-to-r from-pink-500 to-violet-500">
         Skills
       </h2>
       <motion.div
@@ -34,7 +34,7 @@ export function SkillsShowcase() {
             animate={{ scale: 1 }}
             transition={{ delay: index * 0.1, type: "spring" }}
             whileHover={{ scale: 1.05, transition: { delay: 0 } }} */
-            className={`bg-gradient-to-br ${skill.color} rounded-lg p-4 text-center shadow-lg cursor-pointer`}
+            className={`bg-linear-to-br ${skill.color} rounded-lg p-4 text-center shadow-lg cursor-pointer`}
           >
             <span className="font-semibold text-gray-900">{skill.name}</span>
           </div>

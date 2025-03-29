@@ -33,7 +33,7 @@ const projects = [
 export function ProjectsGrid() {
   return (
     <section id="projects" className="py-20">
-      <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+      <h2 className="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-linear-to-r from-pink-500 to-violet-500">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -44,7 +44,7 @@ export function ProjectsGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className={`bg-gradient-to-br ${project.color} rounded-lg overflow-hidden shadow-lg`}
+            className={`bg-linear-to-br ${project.color} rounded-lg overflow-hidden shadow-lg`}
           >
             <Image
               src={project.image}

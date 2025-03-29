@@ -14,7 +14,7 @@ export function Hero() {
         initial={{ y: 20 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.2, type: "spring" }}
-        className="text-6xl font-bold pb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-pink-500 to-violet-600"
+        className="text-6xl font-bold pb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-pink-500 to-violet-600"
       >
         Mirrored Apps
       </motion.h1>
@@ -34,7 +34,7 @@ export function Hero() {
       >
         <a
           href="#contact"
-          className="bg-gradient-to-r from-pink-500 to-violet-500 px-6 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-violet-600 transition-all duration-300"
+          className="bg-linear-to-r from-pink-500 to-violet-500 px-6 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-violet-600 transition-all duration-300"
         >
           Get in Touch
         </a>
